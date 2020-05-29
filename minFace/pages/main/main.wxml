@@ -1,0 +1,43 @@
+<!--pages/main/main.wxml-->
+<view class="contain">
+ 
+<view class='select'>
+  <text>选择功能</text>
+</view>
+
+  <!-- <view class="btn_all">
+      <view class='btn_register'>
+        <button bindtap="face_register" type="primary">人脸注册</button>
+      </view>
+      <view class='btn_login'>
+        <button bindtap="face_login" type="primary" >人脸登录</button>
+      </view>    
+  </view> -->
+<view class="function">
+<view class="function_facedetect">
+<view  class='btn_facedetect'  bindtap='btn_info'>
+      <text>信息完善</text>
+    </view>
+</view>
+<view class='function_facedetect'>
+    <view  class='btn_facedetect'  bindtap='btn_register'>
+      <text>人脸注册</text>
+    </view>
+  </view>
+  <view class='function_facedetect'>
+    <view  class='btn_facedetect'  bindtap='btn_login'>
+      <text>人脸登录</text>
+    </view>
+  </view>
+  <view class='function_facedetect'>
+    <view  class='btn_facedetect'  bindtap='btn_locate'>
+      <text>手机定位</text>
+    </view>
+  </view>
+  <!-- <view class='function_facedetect'>
+    <view  class='btn_facedetect'  bindtap='btn_landmark'>
+      <text>眨眼检测</text>
+    </view>
+  </view> -->
+  </view>
+ </view>

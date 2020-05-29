@@ -1,0 +1,29 @@
+{% extends "common/layout_main.html" %}
+{% block content %}
+<div class="wrapper wrapper-content">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <span class="label label-primary pull-right">统计</span>
+                            <h5>签到</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <h1 class="no-margins">{{count}}</h1>
+                            <small>签到：{{in}}</small>
+                            <small>未签到：{{out}}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="member_order" style="height: 400px;border: 1px solid #e6e6e6;padding-top: 20px;">
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+{% block js %}
+<script src="{{buildStaticUrl('/plugins/highcharts/highcharts.js')}}"></script>
+<script src="{{buildStaticUrl('/js/index/index.js')}}"></script>
+{% endblock %}
